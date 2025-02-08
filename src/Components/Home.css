@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+  
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px; /* Adjust size to match the sketch */
+    font-weight: 700; /* Bold */
+    color: #000; /* Adjust color as needed */
+    margin-bottom: 10px; /* Space between title and subtitle */
+}
+  
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; /* Adjust size to match the sketch */
+    font-weight: 400; /* Regular */
+    color: #666; /* Lighter shade for the subtitle */
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space distribution on the main axis */
+    align-items: center; /* Aligns children vertically in the center */
+    width: 100%; /* Ensures the container spans the full width of its parent */
+}
+  
+.center-image {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 70%; /* Adjust this value to increase the base size of the center image */
+    display: flex;
+    justify-content: center; /* Centers the image within this div */
+    margin-top: 50px;
+}
+  
+.side-images {
+    flex-grow: 1; /* Prevents side images from growing */
+    flex-basis: 100%; /* Reduces the initial size making them closer to the center */
+    display: flex;
+    justify-content: center; /* This centers the side images within their div */
+    align-items: center; /* Aligns the side images at the center vertically */
+    margin-top: -150px; /* Adjust this value to move images higher */
+    margin-left: -400px;
+    margin-right: -400px;
+}
+
+.homepage-container {
+    background-color: #0000; /* Sets the background color */
+    min-height: 100vh; /* Ensures it covers the full height of the viewport */
+}
+
+.headshot {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes rotate-swat {
+    0%, 100% {
+        transform: rotate(5deg);
+    }
+    25%, 75% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+}
+
+.swat {
+    width: 550px;
+    height: auto;
+    animation: rotate-swat 3s linear infinite;
+}
+
+@keyframes rotate-umass {
+    0%, 100% {
+        transform: rotate(-5deg);
+    }
+    25%, 75% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+.umass {
+    width: 35%;
+    height: auto;
+    animation: rotate-umass 3s linear infinite;
+}
